@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../styles/2.1.css">
+		<title>Йокогама: суши-бар</title>
+	</head>
+	<body>
+		<header>
+			<h1>Суши-бар<br><span class="bar-title">Йокогама</span></h1>
+		</header>
+		<nav>
+ 			<div><a href="/">Главная</a></div>
+ 			<div><a href="sashimi.html">Сашими</a></div>
+ 			<div><a href="sushi.html">Суши</a></div>
+ 			<div><a href="rolls.html">Роллы</a></div>
+ 			<div><a href="price-list.html">Прайс-лист</a></div>
+			<div>Заказ</div>
+		</nav>
+			<main>
+				<h2>Заказ блюд</h2>
+					<form action="https://formspree.io/f/xppzyqwv" method="post">
+						<p>
+						<label for="name">Как к вам обращаться?</label><br>
+						<input name="name" id="name" required>
+						</p>
+						<p>
+							<label for="dishes">Что желаете заказать?</label><br>
+							<select name="dishes" id="dishes" size="6" multiple
+							required>
+							<optgroup label="Суши">
+								<option value="chukka">Чукка</option>
+								<option value="maguro">Магуро</option>
+								<option value="tobiko">Тобико</option>
+							</optgroup>
+								<optgroup label="Сашими">
+								<option value="unagi">Унаги</option>
+								<option value="hamachi">Хамачи</option>
+							</optgroup>
+							<optgroup label="Роллы">
+								<option value="kunsei-batakon">Кунсэй-батакон</option>
+								<option value="arigato">Аригато</option>
+								<option value="mexican">Мексиканский</option>
+							</optgroup>
+							</select>
+						</p>
+						<p>
+							<label for="phone">Номер телефона:</label><br>
+							<input type="tel" name="phone" id="phone" required>
+						</p>
+						<fieldset>
+							<legend>Дополнительно</legend>
+							<input type="checkbox" name="urgent" value="yes"> Срочный заказ
+							<p>
+								Упаковка:<br>
+								<input type="radio" name="package" id="package1" value="standard" checked>
+								<label package1for="">Стандартная</label><br>
+								<input type="radio" name="package" id="package2" value="gift">
+								<label for="package2">Подарочная</label><br>
+								<input type="radio" name="package" id="package3" value="eco">
+								<label for="package3">Экологическая</label>
+							</p>
+							<label for="addenda">Примечания:</label><br>
+							<textarea cols="40" rows="8" name="addenda" id="addenda"></textarea>
+						</fieldset>
+						<p>
+							<button type="submit">
+								Заказать<br>
+								<img src="/images/sushi-button.png">
+							</button>
+						</p>
+					</form>
+			</main>
+			<footer>
+				<address>Наш адрес: ул. Зеленая, 17.</address>
+				<p>&copy; читатели книги.</p>
+			</footer>
+		</body>
+<html>
